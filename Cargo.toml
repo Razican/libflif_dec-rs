@@ -1,0 +1,23 @@
+[package]
+name = "libflif_dec"
+version = "0.1.0-dev"
+links = "ntrumls"
+build = "build.rs"
+license = "Apache-2.0"
+readme = "README.md"
+repository = "https://github.com/Razican/libflif_dec-rs"
+documentation = "TODO"
+authors = ["Razican <razican@protonmail.ch>"]
+description = """
+FLIF image decoder library interface for Rust. An interface to the reference
+implementation. FLIF, the Free Lossless Image Format is a new image compression
+algorithm that claims to have better compression ratio than webP, PNG or JPEG
+while being lossless.
+"""
+keywords = ["FLIF", "libflif", "libflif_dec", "image"]
+
+[dependencies]
+libc = "^0.2"
+
+[build-dependencies]
+gcc = "^0.3"
